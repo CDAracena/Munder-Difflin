@@ -1,0 +1,202 @@
+body {
+  background-color: #F9F8F8;
+}
+/* Navigational design. */
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+
+nav {
+  font-family: 'VT323', monospace;
+  font-size: 35px;
+  color: rgb(152, 201, 229);
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+ul {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 50px;
+}
+li {
+  font-size: 20px;
+  color: rgb(152, 201, 229);
+  font-family: 'Dokdo', cursive;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+li:hover {
+  color: #F9F8F8;
+  background-color: rgb(152, 201, 229);
+  border-radius: 30px;
+  width: 90px;
+  display: inline-block;
+  cursor: pointer;
+}
+ /*Navigational design ends here */
+
+ /*Container two second starts here */
+ .container2 {
+   background-color: rgb(152, 201, 229);
+   display:block;
+   border-radius: 50px 60px 70px;
+ }
+
+#Tagline {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  color: #F9F8F8;
+  padding-top: 40px;
+}
+#Tagline2 {
+text-align: center;
+font-family: 'VT323', monospace;
+font-size: 40px;
+color: #F9F8F8;
+}
+
+.DisplayContainer {
+  display: block;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  margin-left: 10%;
+  position: relative;
+}
+
+
+/* .PDisplay is inside of .DisplayContainer */
+.PDisplay {
+  background-color: #F9F8F8;
+  width: 200px;
+  height: 300px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 3px dashed rgb(81, 128, 155);
+}
+.PDisplay:hover {
+  border-style: solid;
+  border-width: 10px;
+}
+/*Master Container 2 ends here! */
+
+
+#statement {
+  color: rgb(152, 201, 229);
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  animation: statement 4s infinite alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes statement{
+0%{
+  color: rgba(152, 201, 229, 0.9);
+}
+15%{
+  color: rgba(152, 201, 299, 0.6);
+}
+25% {
+  color: rgba(152, 201, 299, 0.3);
+}
+40%{
+  color: rgba(81, 128, 155, 0.2);
+}
+60%{
+  color: rgba(81, 128, 155, 0.5);
+}
+80%{
+  color: rgba(81, 128, 155, 0.7);
+}
+100%{
+  color: rgba(81, 128, 155, 0.9);
+}
+}
+/*Master Container3 starts here */
+.info1 {
+  width: 900px;
+  height: 400px;
+  background-color: rgba(81, 128, 155, 0.9);
+  border: 20px solid rgb(152, 201, 229);
+  padding: 20px;
+  margin-left: 30px;
+  float: left;
+  border-radius: 20px;
+  animation: expand 4s;
+  -webkit-animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes expand{
+ 0%{
+   width: 0px;
+   background-color: rgba(81, 128, 155, 0.9);
+   height: 0px;
+
+ }
+ 25%{
+   width: 400px;
+   height: 0px;
+   background-color: rgba(81, 128, 155, 0.5);
+ }
+ 50%{
+   width: 600px;
+   height: 0px;
+   background-color: rgba(81, 128, 155, 0.3);
+ }
+ 75%{
+   width: 900px;
+   height: 200px;
+   background-color: rgba(81, 128, 155, 0.1);
+ }
+ 100% {
+   display: block;
+   background-color: rgba(81, 128, 155, 0.0);
+   height: 400px;
+ }
+}
+
+#priceTable {
+  height: 400px;
+  width: 600px;
+  background-color: rgb(152, 201, 229);
+  display: inline-block;
+  margin-left: 30%;
+  font-family: 'Dokdo', cursive;
+}
+/* Table editing follows */
+table, tr, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+th {
+  border: 1px solid black;
+}
+
+.staples {
+  background-color: #F9F8F8;
+  color: red;
+}
+
+.amazon {
+  background-color: #232f3e;
+  color: orange;
+}
+.munder {
+  background-color: #F9F8F8;
+  color: rgba(81, 128, 155, 0.9);
+}
+
+.munder:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
