@@ -40,8 +40,79 @@ li:hover {
   display: inline-block;
   cursor: pointer;
 }
- /*Navigational design ends here */
 
+a:link{
+  color: rgb(152, 201, 229);
+  font-family: 'Dokdo', cursive;
+  text-decoration: none;
+}
+
+a:visited{
+  color: rgb(152, 201, 229);
+}
+a:hover{
+  color: #F9F8F8;
+}
+
+
+ /*Navigational design ends here */
+/*Hover Menu Design */
+ #hoverMenu{
+width: 230px;
+height: 230px;
+background: radial-gradient(lightblue, white);
+position: fixed;
+left: 0px;
+top: 100px;
+border-radius: 60px;
+box-shadow: 5px 5px 5px 5px gray;
+z-index: 2;
+text-align: center;
+font-family: 'Dokdo', cursive;
+animation: signUp 2s;
+animation-fill-mode: forwards;
+ }
+ #MenuText{
+   padding-top: 20px;
+   text-align: center;
+   color: #113245;
+ }
+#UserName1{
+  text-align: center;
+  border: 1px outset blue;
+  background-color: #F9F8F8;
+}
+
+#PassWord{
+  text-align: center;
+  border: 1px outset blue;
+  background-color: #F9F8F8;
+}
+
+#Email{
+  text-align: center;
+  border: 1px outset blue;
+  background-color: #F9F8F8;
+}
+
+@keyframes signUp{
+  0%{
+    opacity: 0.0;
+  }
+  25%{
+    opacity: 0.3;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0.9;
+  }
+}
+/*Hover Menu Design ends
  /*Container two second starts here */
  .container2 {
    background-color: rgb(152, 201, 229);
@@ -121,19 +192,65 @@ color: #F9F8F8;
   color: rgba(81, 128, 155, 0.9);
 }
 }
+
+/*ImAGE FILE CSS */
+#img1{
+text-align: center;
+
+padding-top: 30%;;
+}
+
+#img2{
+  text-align: center;
+  padding-top: 30%;
+}
+
+#img3{
+  text-align: center;
+  padding-top: 30%;
+}
+#img4{
+  text-align: center;
+  padding-top: 30%;
+}
+/*CART DESIGN! */
+.cartX{
+  color:#113245;
+  text-decoration: underline;
+}
+.Quantity{
+  margin-left: 35%;;
+}
+.addButton{
+  border-radius: 50px;
+  background-color: rgba(81, 128, 155, 0.9);
+  color: #F9F8F8;
+  font-family: 'VT323', monospace;
+  display: block;
+  margin-left: 20%;
+  margin-top: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+/*CART DESIGN ENDS */
 /*Master Container3 starts here */
+.container3{
+  display: block;
+}
 .info1 {
   width: 900px;
   height: 400px;
   background-color: rgba(81, 128, 155, 0.9);
   border: 20px solid rgb(152, 201, 229);
   padding: 20px;
+  padding-top: 60px;
   margin-left: 30px;
   float: left;
   border-radius: 20px;
   animation: expand 4s;
   -webkit-animation-fill-mode: forwards;
   position: relative;
+  display: inline-block;
 }
 
 @keyframes expand{
@@ -166,12 +283,14 @@ color: #F9F8F8;
 }
 
 #priceTable {
-  height: 400px;
+  height: 270px;
   width: 600px;
   background-color: rgb(152, 201, 229);
   display: inline-block;
-  margin-left: 30%;
+  margin-left: 20%;
   font-family: 'Dokdo', cursive;
+  animation: tableAppear 6s;
+  animation-fill-mode: forwards;
 }
 /* Table editing follows */
 table, tr, td {
@@ -199,4 +318,86 @@ th {
 .munder:hover {
   font-size: 20px;
   cursor: pointer;
+}
+
+@keyframes tableAppear{
+  0%{
+    width: 0px;
+    height: 0px;
+    opacity: 0.0;
+  }
+  25%{
+    width: 50px;
+    height: 25px;
+    opacity: 0.0;
+  }
+  50%{
+    width: 200px;
+    height: 100px;
+    opacity: 0.0;
+  }
+  75%{
+    width: 400px;
+    height: 200px;
+    opacity: 0.5
+  }
+  100%{
+    width: 600px;
+    height: 270px;
+    opacity: 0.9;
+  }
+}
+/* HERE STARTS MASTER CONTAINER 4*/
+.container4{
+display: block;
+}
+#footerContainer{
+  display: block;
+  margin-left: 10%;
+}
+/*Don't forget to add an opacity property to .footerSections*/
+.footerSections{
+  width: 250px;
+  height: 270px;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(rgb(152, 201, 229), rgba(81, 128, 155, 0.9));
+  border: 1px;
+  border-style: inset;
+  border-color: navy blue;
+  animation: disappear2 7s;
+}
+#footerContact{
+  width: 250px;
+  height: 290px;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(rgb(152, 201, 229), rgba(81, 128, 155, 0.9));
+  border: 1px;
+  border-style: inset;
+  border-color: navy blue;
+  animation: disappear2 7s;
+}
+
+@keyframes disappear2{
+  0%{
+    opacity: 0.0;
+  }
+  25%{
+    opacity: 0.0;
+  }
+  50%{
+    opacity: 0.0;
+  }
+  75%{
+    opacity: 0.5;
+  }
+  85%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0.9;
+  }
 }

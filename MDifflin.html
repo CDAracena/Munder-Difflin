@@ -11,40 +11,78 @@
 <div class="container1">
 <nav><strong>Munder Difflin-<em>Lowest Prices!</em></strrong>
   <ul>
-    <li>Search </li>
-    <li>About </li>
-    <li>Contact </li>
-    <li>Locations </li>
+    <li onclick="Searching()">Search </li>
+    <li><a href="#footerContainer">About </a></li>
+    <li><a href="#footerContact">Contact </a></li>
+    <li><a href="#footerContainer">Locations </a></li>
   </ul>
 </nav>
 </div>
 <!-- HERE ENDS THE NAVIGATIONAL MENU -->
 
+<!-- HOVER MENU -->
+<div id="hoverMenu">
+
+<p id="MenuText"><strong>Ready to Sign Up?!</strong></p>
+<p id="hoverInput"><input type="text" placeholder = "Username" id="UserName1">
+  <p><input type="text" placeholder = "Password" id="PassWord"></p>
+  <p> <input type="text" placeholder = "E-Mail" id="Email"></p>
+  <p><button type="button" onclick="signUp()">Submit </button></p>
+</div>
+<!-- Hover Menu Ends -->
 
 <!-- HERE STARTS THE SECOND CONTAINER. -->
 <div class="container2">
-  <p id="Tagline"> <strong> Our Products </strong> </p>
+  <p id="Tagline"> <strong> Product List</strong> </p>
 
   <!-- The following container, contains the divs under 'Our Products' to display
   the three individual images and containers. -->
   <div class="DisplayContainer">
     <!--First Display Box -->
     <div class="PDisplay">
+      <div id="img1">
+        <img src="https://www.allcolourenvelopes.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/4/c4-c5-bright-gold-envelopes_2.jpg" width = "150" height = "120" alt="Yellow Envelope">
+    </div>
+    <div>
+      <input type="number" min="0" max="10" class="Quantity" id="img1Q"><button type="button" class="addButton" onclick="QuantityAdd()">Add To Cart </button>
+    </div>
+    <p id="img1Add" style="text-align: center" class="cartX"></p>
       <!--Don't forget to create a <div = ".img1" for each box. Basically add a class to each box
       and make the img a background-image: of each box -->
     </div>
     <!--Second Display Box -->
     <div class="PDisplay">
+      <div id="img2">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/31QtOF06ESL._SY355_.jpg" width = "150" height = "120" alt = "White Envelopes">
+      </div>
+      <div>
+        <input type="number" min="0" max="10" class="Quantity" id="img2Q"><button type="button" class="addButton" onclick="QuantityAdd2()">Add To Cart </button>
+      </div>
+      <p id="img2Add" style="text-align: center" class="cartX"></p>
       <!--Don't forget to create a <div = ".img1" for each box. Basically add a class to each box
       and make the img a background-image: of each box -->
     </div>
     <!--Third Display Box -->
     <div class="PDisplay">
+      <div id="img3">
+        <img src="https://www.tts-group.co.uk/on/demandware.static/-/Sites-TTSGroupE-commerceMaster/default/dw728a35ee/images/hi-res/1007744_00_EE01050_1_large_co.jpg" width = "150" height = "120" alt = "Copy Paper">
+      </div>
+      <div>
+        <input type="number" min="0" max="10" class="Quantity" id="img3Q"> <button type="button" class="addButton" onclick="QuantityAdd3()">Add To Cart </button>
+      </div>
+      <p id="img3Add" style="text-align: center" class="cartX"></p>
       <!--Don't forget to create a <div = ".img1" for each box. Basically add a class to each box
       and make the img a background-image: of each box -->
     </div>
     <!-- Fourth box starts here -->
     <div class="PDisplay">
+      <div id="img4">
+      <img src="https://s3.amazonaws.com/buycott/images/attachments/003/020/429/original/ca6624f73d430fc89d1f32431cc76bd9?1498695821" width = "150" height = "120" alt = "College Filler Paper">
+      </div>
+      <div>
+        <input type="number" min="0" max="10" class="Quantity" id="img4Q"><button type="button" class="addButton" onclick="QuantityAdd4()">Add To Cart </button>
+      </div>
+      <p id="img4Add" style="text-align: center" class="cartX"></p>
       <!--Don't forget to create a <div = ".img1" for each box. Basically add a class to each box
       and make the img a background-image: of each box -->
     </div>
@@ -56,7 +94,7 @@
 <!-- HERE STARTS THE THIRD MASTER CONTAINER -->
 <div class="container3">
 
-  <div class = "info1">
+  <div class= "info1">
 
     <div id="priceTable">
 
@@ -93,7 +131,35 @@
     </div>
 <!--The div underneath is the end of MASTER container 3 -->
   </div>
+</div>
 
+<!-- The fourth and final container starts here. Footer included -->
+
+<div class="container4">
+  <!--About SECTION -->
+  <div id="footerContainer">
+    <div class="footerSections">
+      <p><strong style="font-size: 20px">About Us</strong> </p>
+      <p>Here at Munder Difflin we believe in producing the highest quality paper products.
+        Not only do we produce the greatest paper products, but as a wholesaler our customers
+        are guaranteed the lowest prices on the market. </p>
+    </div>
+    <div id="footerContact">
+      <p><strong style="font-size: 20px">Contact Us </strong> </p>
+      <p>Questions? Comments? Queries? At Munder Difflin we are always happy
+          to hear from our current and potential clients. Feel free to contact us
+          (555) 555 - 5555 (Available 24/7). E-Mail more your style? No problem!
+          Message us at info@MDPapers.com </p>
+  </div>
+  <div class="footerSections">
+    <p><strong style="font-size: 20px">Locations </strong> </p>
+    <p> Munder Difflin is quickly growing, we currently have 4 more locations opening
+      up across the U.S. for 2018.
+      Locations set for 2018 include: Boston, MA.
+      New Orleans, LA. Anchorage, AK. Denver, CO. </p>
+</div>
+</div>
+</div>
 
   </body>
 </html>
