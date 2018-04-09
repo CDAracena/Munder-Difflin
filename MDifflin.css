@@ -1,3 +1,18 @@
+.LogIn{
+  display:block;
+  height: 20px;
+  background-color: rgb(152, 201, 229);
+
+}
+#logintext{
+text-align: center;
+color: #F8F9F9;
+}
+
+#logintext:hover {
+  background-color: #F8F9F9;
+  color: rgb(152, 201, 229);
+}
 body {
   background-color: #F9F8F8;
 }
@@ -63,7 +78,7 @@ height: 230px;
 background: radial-gradient(lightblue, white);
 position: fixed;
 left: 0px;
-top: 100px;
+top: 130px;
 border-radius: 60px;
 box-shadow: 5px 5px 5px 5px gray;
 z-index: 2;
@@ -236,6 +251,7 @@ padding-top: 30%;;
 /*Master Container3 starts here */
 .container3{
   display: block;
+
 }
 .info1 {
   width: 900px;
@@ -350,6 +366,7 @@ th {
 /* HERE STARTS MASTER CONTAINER 4*/
 .container4{
 display: block;
+
 }
 #footerContainer{
   display: block;
@@ -362,11 +379,12 @@ display: block;
   font-family: 'VT323', monospace;
   text-align: center;
   display: inline-block;
-  background: linear-gradient(rgb(152, 201, 229), rgba(81, 128, 155, 0.9));
+  background: linear-gradient(rgba(152, 201, 229, 0.5), rgba(81, 128, 155, 0.6));
   border: 1px;
   border-style: inset;
   border-color: navy blue;
   animation: disappear2 7s;
+  color: #F8F9F9;
 }
 #footerContact{
   width: 250px;
@@ -374,13 +392,26 @@ display: block;
   font-family: 'VT323', monospace;
   text-align: center;
   display: inline-block;
-  background: linear-gradient(rgb(152, 201, 229), rgba(81, 128, 155, 0.9));
-  border: 1px;
-  border-style: inset;
+  background: linear-gradient(rgba(152, 201, 229, 0.5), rgba(81, 128, 155, 0.6));
+  border: 1px inset;
   border-color: navy blue;
   animation: disappear2 7s;
+  color: #F8F9F9;
 }
 
+.CONT4{
+  display: inline-block;
+  width: 900px;
+  padding-left: 20px;
+  background:linear-gradient(rgba(152, 201, 229, 0.5), rgba(81, 128, 155, 0.6));
+  border: rgb(152, 201, 229);
+  float: left;
+  margin-left: 20px;
+  border-radius: 40px;
+  border-width: 12px;
+  border-style: solid;
+  animation: disappear2 7s;
+}
 @keyframes disappear2{
   0%{
     opacity: 0.0;
