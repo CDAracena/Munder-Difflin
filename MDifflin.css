@@ -1,7 +1,7 @@
 .LogIn{
   display:block;
   height: 20px;
-  background-color: rgb(152, 201, 229);
+  background-color: rgb(81, 128, 155);
   cursor: pointer;
 }
 #logintext{
@@ -23,16 +23,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(to top, rgba(152, 201, 229, 0.3), #F8F9F9);
-
 }
-
 
 nav {
   font-family: 'VT323', monospace;
   font-size: 35px;
   color: rgb(152, 201, 229);
-  padding-left: 5px;
-  padding-top: 5px;
+  margin: 0 auto;
 }
 
 ul {
@@ -51,7 +48,7 @@ li {
 
 li:hover {
   color: #F9F8F8;
-  background-color: rgb(152, 201, 229);
+  background-color: rgb(81, 128, 155);
   border-radius: 30px;
   width: 90px;
   display: inline-block;
@@ -129,14 +126,16 @@ animation-fill-mode: forwards;
     opacity: 0.9;
   }
 }
+
 /*Hover Menu Design ends
  /*Container two second starts here */
  .container2 {
    background-color: rgba(152, 201, 229, 0.8);
    display:flex;
    flex-direction:column;
-   border-radius: 0px 0px 13px 13px;
+   border-radius: 43px 43px 40px 40px;
    position: relative;
+   margin-top: 15px;
  }
 
 #Tagline {
@@ -144,19 +143,24 @@ animation-fill-mode: forwards;
   font-family: 'VT323', monospace;
   font-size: 40px;
   color: #F9F8F8;
+  background-color: rgb(81, 128, 155);
+  border-radius: 139px 139px 8px 8px;
+  margin-top: 0px;
 }
 #Tagline2 {
 text-align: center;
 font-family: 'VT323', monospace;
 font-size: 40px;
 color: #F9F8F8;
+background-color: rgb(81, 128, 155);
+border-radius: 8px 8px 139px 139px;
+margin-bottom: 0px;
 }
 
 .DisplayContainer {
   display: flex;
   justify-content: space-around;
   padding-top: 25px;
-  padding-left: 40px;
   padding-bottom: 1px;
   position: relative;
 }
@@ -252,16 +256,16 @@ padding-top: 30%;;
 /*CART DESIGN ENDS */
 /*Master Container3 starts here */
 .container3{
-  display: block;'
+  display: flex;
+  background-color: rgb(81, 128, 155);
+  border-radius: 17px 17px 287px 287px;
 
-  '
 
 }
 .info1 {
-  height: 400px;
+  height: 270px;
   background-color: rgba(81, 128, 155, 0.9);
   border: 10px solid rgb(152, 201, 229);
-  padding-top: 60px;
   margin: 0 auto;
   border-radius: 17px 17px 17px 17px;
   animation: expand 4s;
@@ -279,24 +283,24 @@ padding-top: 30%;;
 
  }
  25%{
-   width: 400px;
-   height: 0px;
+   width: 50px;
+   height: 25px;
    background-color: rgba(81, 128, 155, 0.5);
  }
  50%{
-   width: 600px;
-   height: 0px;
+   width: 200px;
+   height: 100px;
    background-color: rgba(81, 128, 155, 0.3);
  }
  75%{
-   width: 700px;
+   width: 400px;
    height: 200px;
    background-color: rgba(81, 128, 155, 0.1);
  }
  100% {
-   display: 749px;
+   width: 600px;
    background-color: rgba(81, 128, 155, 0.0);
-   height: 400px;
+   height: 270px;
  }
 }
 
@@ -381,17 +385,19 @@ display: block;
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(152, 201, 229, 0.5), rgba(81, 128, 155, 0.6));
+  background-color: rgb(81, 128, 155);
   animation: disappear2 7s;
   color: #F8F9F9;
   vertical-align: middle;
+  padding: 15px;
 }
 #footerContact{
   font-family: 'VT323', monospace;
   text-align: center;
-  background: linear-gradient(rgba(152, 201, 229, 0.5), rgba(81, 128, 155, 0.6));
+background-color:rgb(81, 128, 155);
   animation: disappear2 7s;
   color: #F8F9F9;
+  padding: 15px;
 }
 
 .CONT4{
@@ -404,6 +410,7 @@ display: block;
   border-style: solid;
   justify-content: space-around;
   animation: disappear2 7s;
+  margin-top: 12px;
 }
 @keyframes disappear2{
   0%{
@@ -424,4 +431,33 @@ display: block;
   100%{
     opacity: 0.9;
   }
+}
+
+@media (max-width: 900px){
+  .footerSections {
+    height: 255px;
+  }
+}
+
+@media (max-width: 600px) {
+#footerContainer {
+  display: block;
+}
+.footerSections {
+  height: 191px;
+}
+#hoverMenu {
+  width: 198px;
+  height: 206px;
+}
+.DisplayContainer {
+     display: block;
+     padding-left: 73px;
+}
+.container3 {
+  display: block;
+  border-radius: 0px 0px 0px 0px;
+}
+.CONT4 {
+  margin-top: 25px;
 }

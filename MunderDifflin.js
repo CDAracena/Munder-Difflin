@@ -1,11 +1,13 @@
+
+
 function signUp() {
   var UName, pWord, eAddress;
   var text = "Congratulations! You have successfully created an account!";
   UName = document.getElementById('UserName1').value;
   pWord = document.getElementById('PassWord').value;
   eAddress = document.getElementById('Email').value;
-
   alert(text + 'Username: ' + UName  + 'Password: ' + pWord  + "E-Mail Address: " + eAddress);
+  document.getElementById("hoverMenu").style.visibility="hidden";
 };
 
 function Searching(){
